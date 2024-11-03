@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  overflow: hidden;
+}
+
+.item {
+  @apply flex items-center  p-5 cursor-pointer gap-2 border-b-[1px] border-gray-600 text-white; /* Tailwind utilities */
+}
+
+.ownMessage {
+  @apply self-end;
+}
+.generalMessage {
+  @apply max-w-[75%]  flex gap-2;
+}
+.notOwnMessage {
+  @apply items-start;
+}
+.ownText {
+  @apply bg-green-600;
+}
+.generalText {
+  @apply p-3 rounded-md;
+}
+.notOwnText {
+  @apply bg-green-900 bg-opacity-75;
+}
